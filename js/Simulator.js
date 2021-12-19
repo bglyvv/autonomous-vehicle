@@ -321,7 +321,7 @@ export default class Simulator {
       // The `false` value means the controller is waiting to be created after the first planning cycle.
       // This signals the simulator to use neutral controls instead of the hard brake used for the `null` value.
       this.autonomousCarController = false;
-      this.enableAutonomousMode();
+      this.enableManualMode(true);
 
       if (!this.plannerRunning) {
         this.plannerReady = true;
